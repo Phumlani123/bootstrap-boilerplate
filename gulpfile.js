@@ -134,4 +134,4 @@ gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'
 }));
 
 // Default task
-gulp.task("default", gulp.series("clean", 'replaceHtmlBlock' , 'build'));
+gulp.task("default", gulp.series("clean", 'build', 'replaceHtmlBlock' ));
